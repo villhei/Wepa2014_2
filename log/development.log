@@ -29408,3 +29408,605 @@ Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-13 13:41:40
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-13 13:41:40 +0200
+
+
+Started GET "/" for 192.168.100.2 at 2014-02-13 19:04:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 509ms (Views: 460.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:04:04 +0200
+
+
+Started GET "/beer_clubs" for 192.168.100.2 at 2014-02-13 19:04:06 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[35mBeerClub Load (0.2ms)[0m  SELECT "beer_clubs".* FROM "beer_clubs"
+  Rendered beer_clubs/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 103ms (Views: 89.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 192.168.100.2 at 2014-02-13 19:04:07 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 85ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/beer_clubs" for 192.168.100.2 at 2014-02-13 19:04:07 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[35mBeerClub Load (0.2ms)[0m  SELECT "beer_clubs".* FROM "beer_clubs"
+  Rendered beer_clubs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places" for 192.168.100.2 at 2014-02-13 19:04:08 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:04:11 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"hyvinkää", "commit"=>"Search"}
+Completed 500 Internal Server Error in 12ms
+
+WebMock::NetConnectNotAllowedError (Real HTTP connections are disabled. Unregistered request: GET http://stark-oasis-9187.herokuapp.com/api/hyvink%C3%A4%C3%A4
+
+You can stub this request with the following snippet:
+
+stub_request(:get, "http://stark-oasis-9187.herokuapp.com/api/hyvink%C3%A4%C3%A4").
+  to_return(:status => 200, :body => "", :headers => {})
+
+============================================================):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:04:25 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"hyvinkaa", "commit"=>"Search"}
+Completed 500 Internal Server Error in 6ms
+
+WebMock::NetConnectNotAllowedError (Real HTTP connections are disabled. Unregistered request: GET http://stark-oasis-9187.herokuapp.com/api/hyvinkaa
+
+You can stub this request with the following snippet:
+
+stub_request(:get, "http://stark-oasis-9187.herokuapp.com/api/hyvinkaa").
+  to_return(:status => 200, :body => "", :headers => {})
+
+============================================================):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.4ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:04:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"helsinki", "commit"=>"Search"}
+Completed 500 Internal Server Error in 3ms
+
+WebMock::NetConnectNotAllowedError (Real HTTP connections are disabled. Unregistered request: GET http://stark-oasis-9187.herokuapp.com/api/helsinki
+
+You can stub this request with the following snippet:
+
+stub_request(:get, "http://stark-oasis-9187.herokuapp.com/api/helsinki").
+  to_return(:status => 200, :body => "", :headers => {})
+
+============================================================):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:04:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"kumpula", "commit"=>"Search"}
+Completed 500 Internal Server Error in 5ms
+
+WebMock::NetConnectNotAllowedError (Real HTTP connections are disabled. Unregistered request: GET http://stark-oasis-9187.herokuapp.com/api/kumpula
+
+You can stub this request with the following snippet:
+
+stub_request(:get, "http://stark-oasis-9187.herokuapp.com/api/kumpula").
+  to_return(:status => 200, :body => "", :headers => {})
+
+============================================================):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started GET "/places" for 192.168.100.2 at 2014-02-13 19:07:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 172ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:07:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:07:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:07:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:07:03 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:07:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Hyvinkää", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant BeermappingApi::HTTParty):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:07:44 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Hyvinkää", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant BeermappingApi::HTTParty):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:07:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Hyvinkää", "commit"=>"Search"}
+Completed 500 Internal Server Error in 26ms
+
+WebMock::NetConnectNotAllowedError (Real HTTP connections are disabled. Unregistered request: GET http://stark-oasis-9187.herokuapp.com/api/hyvink%C3%A4%C3%A4
+
+You can stub this request with the following snippet:
+
+stub_request(:get, "http://stark-oasis-9187.herokuapp.com/api/hyvink%C3%A4%C3%A4").
+  to_return(:status => 200, :body => "", :headers => {})
+
+============================================================):
+  lib/beermapping_api.rb:9:in `fetch_places_in'
+  lib/beermapping_api.rb:5:in `block in places_in'
+  lib/beermapping_api.rb:5:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/ville/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Hyvinkää", "commit"=>"Search"}
+Redirected to http://192.168.100.13:3000/places
+Completed 302 Found in 448ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 103ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:24 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 305ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:33 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:34 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:34 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:35 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:36 +0200
+
+
+Started POST "/places" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEt74onxfDk6CtCHuWALYdki9rEeqcmudDTqyk3Vpm0=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/users.css?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/users.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 192.168.100.2 at 2014-02-13 19:08:37 +0200

@@ -33,9 +33,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'httparty'
-
-gem 'webmock'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,6 +43,8 @@ end
 gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
+  gem 'httparty'
+
 # gem 'unicorn'
 
 group :development, :test do
@@ -58,5 +57,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', require: false
+gem 'webmock'
+
 end
 
