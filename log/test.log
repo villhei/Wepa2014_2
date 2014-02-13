@@ -32829,3 +32829,373 @@ Processing by BreweriesController#index as HTML
   Rendered breweries/index.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
   [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:30:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 937ms (Views: 827.3ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:30:23 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:30:23 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:30:23 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:31:44 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 346ms (Views: 233.1ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:31:45 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 12620ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:31:57 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:31:57 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:31:57 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 344ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:31:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:00 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 332ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:35:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 266ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 251ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 252ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:35:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:02 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 393ms (Views: 283.1ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:38:03 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 295ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:03 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:03 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:38:03 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 239ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:38:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 369ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:38:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:42:56 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 355ms (Views: 242.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:42:56 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 270ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:42:57 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:44:49 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 356ms (Views: 249.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:44:50 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 269ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:44:50 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 288ms (Views: 183.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 257ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:04 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 237ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:05 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:05 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 263ms (Views: 156.7ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"hyvinkää", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 253ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:52 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 312ms (Views: 310.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:52 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:46:52 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 237ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:46:52 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:47:28 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 268ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"hyvinkaa", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 249ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 236ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:47:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 278ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"Laihia", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"hyvinkaa", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-13 13:48:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
