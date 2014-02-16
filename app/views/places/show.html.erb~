@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @place.name %>
+</p>
+
+<p>
+<ul>
+<% Place.rendered_fields.each do |f| %>
+	<li><%= @place.send(f) %></li>
+<% end %>
+</ul>
+
+<iframe src="<%= @place.blogmap %>"></iframe>
